@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "560170129754",
+    "firebase_url": "https://reactnative-maps-1531037892787.firebaseio.com",
+    "project_id": "reactnative-maps-1531037892787",
+    "storage_bucket": "reactnative-maps-1531037892787.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:560170129754:android:6f9b857bd20411a1",
+        "android_client_info": {
+          "package_name": "com.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "560170129754-iv28uamcpogabtqknqldttp48smfn4u7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app",
+            "certificate_hash": "c137761da0e2817a4f11b0a5fe1a564085eb6d98"
+          }
+        },
+        {
+          "client_id": "560170129754-v25pk9b1euo9f3031kbd4h9dm44sngpk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoIKz4AZvXAbiXxaPp5Gvsay1hvOgy_BQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "560170129754-v25pk9b1euo9f3031kbd4h9dm44sngpk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
