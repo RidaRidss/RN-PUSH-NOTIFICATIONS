@@ -72,6 +72,37 @@ export default class App extends Component<Props> {
       soundName: "default"
       //  soundName: "android.resource://com.app/raw/sound", // (optional) Sound to play when the notification is shown. Value of 'default' plays the default sound. It can be set to a custom sound such as 'android.resource://com.xyz/raw/my_sound'. It will look for the 'my_sound' audio file in 'res/raw' directory and play it. default: 'default' (default sound is played)
     });
+
+    //   DeviceEventEmitter.addListener("notificationActionReceived", function(
+    //     actions
+    //   ) {
+    //     console.log("Notification action received: " + actions);
+    //     const info = JSON.parse(actions.dataJSON);
+    //     if (info.action == "Accept") {
+    //       // Do work pertaining to Accept action here
+    //       alert("accepted");
+    //     } else if (info.action == "Reject") {
+    //       // Do work pertaining to Reject action here
+    //       alert("accepted");
+    //     }
+    //     // Add all the required actions handlers
+    //   });
+    // })();
+
+    //   const scheduleNotificationsForAndroid = function(time, alertBody, info) {
+    //     if (info.type == Constants.NotificationTypes.ALARM) {
+    //       // JSON array isn't handled properly in react native Android bridge. Pass this as a string.
+    //       // This gets converted to JSON array from string in RNPushNotificationHelper.sendNotification().
+    //      // Add all the actions that you want to show for this notification
+    //       info.actions = '["Accept","Reject"]';
+    //     }
+
+    //     PushNotificationAndroid.localNotificationSchedule({
+    //       message: alertBody,
+    //       date: new Date(time),
+    //       ...info
+    //     });
+    // }
   }
   render() {
     return (
