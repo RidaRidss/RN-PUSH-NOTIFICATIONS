@@ -32,9 +32,10 @@ export function scheduleLocalNotification(message, date, id, payload) {
     date: fireDate,
     data: JSON.stringify(payload),
     vibrate: true, // (optional) default: true
-    vibration: 300, // vibration length in milliseconds, ignored if vibrate=false, default: 1000
+    vibration: 600, // vibration length in milliseconds, ignored if vibrate=false, default: 1000
     tag: "#my_sleep_time", // (optional) add tag to message
     ongoing: true, // (optional) set whether this is an "ongoing" notification
+    autoCancel: true, // (optional) default: true
 
     /* iOS and Android properties */
     title: "Reminder", // (optional, for iOS this is only used in apple watch, the title will be the app name on other iOS devices)
@@ -45,7 +46,9 @@ export function scheduleLocalNotification(message, date, id, payload) {
     },
     playSound: true, // (optional) default: true
     color: "green", // (optional) default: system default
-    soundName: "default"
+    soundName: "default",
+    repeatType: "day", // (optional) Repeating interval. Check 'Repeating Notifications' section for more info.
+    actions: '["Yes", "No"]' // (Android only) See the doc for notification actions to know more
   };
 
   //schedule the notification

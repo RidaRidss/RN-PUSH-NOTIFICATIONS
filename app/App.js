@@ -18,7 +18,7 @@ var ampm = hours >= 12 ? "pm" : "am";
 var hours = (date.getHours() < 10 ? "0" : "") + date.getHours();
 var minutes = (date.getMinutes() < 10 ? "0" : "") + date.getMinutes();
 var strTime = hours + ":" + minutes + " " + ampm;
-
+var strTimeWithOutZone = hours + ":" + minutes;
 // ================================================================================================
 
 // arrange a (current date n picked time from picker) format to pass as param for push notification
