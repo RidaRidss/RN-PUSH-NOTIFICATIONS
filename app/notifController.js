@@ -36,7 +36,7 @@ export function scheduleLocalNotification(message, date, id, payload) {
     tag: "#my_sleep_time", // (optional) add tag to message
     ongoing: true, // (optional) set whether this is an "ongoing" notification
     autoCancel: true, // (optional) default: true
-
+    foreground: true,
     /* iOS and Android properties */
     title: "Reminder", // (optional, for iOS this is only used in apple watch, the title will be the app name on other iOS devices)
     permissions: {
