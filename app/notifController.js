@@ -34,7 +34,7 @@ export function scheduleLocalNotification(message, date, id, payload) {
     vibrate: true, // (optional) default: true
     vibration: 600, // vibration length in milliseconds, ignored if vibrate=false, default: 1000
     tag: "#my_sleep_time", // (optional) add tag to message
-    ongoing: true, // (optional) set whether this is an "ongoing" notification
+    ongoing: false, // (optional) set whether this is an "ongoing" notification
     autoCancel: true, // (optional) default: true
     foreground: true,
     /* iOS and Android properties */

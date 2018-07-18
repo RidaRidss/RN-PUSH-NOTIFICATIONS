@@ -50,8 +50,8 @@ export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      time: strTime,
-      date: currentDate
+      time: "",
+      date: ""
     };
     this.handleAppStateChange = this.handleAppStateChange.bind(this);
   }
@@ -91,10 +91,7 @@ export default class App extends Component {
             scheduleLocalNotification(
               "Change Time & you will get a push notification on current date n picked time",
               timePickedNDate,
-              "logs",
-              {
-                test: "1"
-              }
+              "logs"
             )
           }
         />
